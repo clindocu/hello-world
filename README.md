@@ -103,20 +103,20 @@ hello("Hello World (generated with R Function)")
 ### R Function with Loop
 
 ``` r
-# Function for printing Hello World n-times (if Output = TRUE)
-hello <- function(NumLoop, Output = TRUE) {
+# Function for printing Hello World n-times (if output = TRUE)
+hello <- function(numloop, output = TRUE) {
   # Output if variable is TRUE
-  if (Output == TRUE) {
-     for(i in 1:NumLoop) {
-        # Print Hello World
-        cat("Hello World", i, "\n")  
-     }
+  if (output == TRUE) {
+    for (i in 1:numloop) {
+      # Print Hello World
+      cat("Hello World", i, "\n")  
+    }
   } else {
-    cat("Output is not TRUE", "\n")  
+    cat("output is not TRUE", "\n")  
   }
 }
 
-hello(8, Output = TRUE)
+hello(8, output = TRUE)
 ```
 
 Python
@@ -135,7 +135,7 @@ def hello(string):                       # Function header
     """Prints a string"""                # Description
     
     # Print string
-    print(string)                         # Body
+    print(string)                        # Body
 
 # Call hello
 hello("Hello World (generated with Python Function)")
@@ -144,19 +144,19 @@ hello("Hello World (generated with Python Function)")
 ### Python Function with Loop
 
 ``` python
-# Define function hello for printing Hello World n-times (if Output = TRUE)
-def hello(NumLoop, Output = True):
+# Define function hello for printing Hello World n-times (if output = TRUE)
+def hello(numloop, output = True):
     """Prints Hello World n-times"""
 
     # If Output is true
-    if Output is True:
+    if output is True:
        # Loop
-       for i in range(NumLoop):
+       for i in range(numloop):
            # Print string
            print("Hello World", i+1)
     else:
        print("Output is not TRUE")
 
 # Call hello
-hello(8, Output = True)
+hello(8, output = True)
 ```
